@@ -1,0 +1,55 @@
+body {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-style: regular;
+}
+
+h1 {
+  font-family: PT Sans;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: PT Sans;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.site-navigation a {
+  font-family: PT Sans;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.interest-block h2 {
+  font-family: PT Sans;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.search-header {
+  font-family: PT Sans;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.found h2 a {
+  font-family: PT Sans;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+}

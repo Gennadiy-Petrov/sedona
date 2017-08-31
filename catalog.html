@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-    			<img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип города Седона">
+    			<img src="img\png-jpg-sedona\logo.png" width="138" height="70" alt="Логотип города Седона">
     		</a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -26,7 +27,7 @@
       <h2 class="visually-hidden">Фильтр выбора отелей</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <legend>Инфраструктура:</legend>
+          <legend class="filters-header">Инфраструктура:</legend>
           <ul>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>Бассейн</li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка</li>
@@ -34,7 +35,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Тип жилья:</legend>
+          <legend class="filters-header">Тип жилья:</legend>
           <ul>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>Гостиница</li>
             <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>Мотель</li>
@@ -42,7 +43,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Стоимость в сутки (Р):</legend>
+          <legend class="filters-header">Стоимость в сутки (Р):</legend>
           <ul>
             <li class="filter-range"><input type="text" name="min" value="от 0"></li>
             <li class="filter-range"><input type="text" name="max" value="до 3000"></li>
@@ -73,10 +74,10 @@
     <section>
       <article class="found">
         <div class="found-image">
-          <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото жилья">
+          <img src="img\png-jpg-sedona\layer-21.jpg" width="135" height="90" alt="Фото жилья">
         </div>
         <div class="found-declaration">
-          <h1 class="found-declaration-header"><a href="#">Amara resort & spa</a></h1>
+          <h2 class="found-declaration-header"><a href="#">Amara resort & spa</a></h2>
           <div class="found-item">
             <span>Гостиница</span><br>
             <a href="#">Подробнее</a>
@@ -100,10 +101,10 @@
       </article>
       <article class="found">
         <div class="found-image">
-          <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото жилья">
+          <img src="img\png-jpg-sedona\layer-89.jpg" width="135" height="90" alt="Фото жилья">
         </div>
         <div class="found-declaration">
-          <h1 class="found-declaration-header"><a href="#">Desert quail inn</a></h1>
+          <h2 class="found-declaration-header"><a href="#">Desert quail inn</a></h2>
           <div class="found-item">
             <span>Мотель</span><br>
             <a href="#">Подробнее</a>
@@ -126,10 +127,10 @@
       </article>
       <article class="found">
         <div class="found-image">
-          <img src="http://placehold.it/135x90" width="135" height="90" alt="Фото жилья">
+          <img src="img\png-jpg-sedona\layer-22.jpg" width="135" height="90" alt="Фото жилья">
         </div>
         <div class="found-declaration">
-          <h1 class="found-declaration-header"><a href="#">Villas at poco diablo</a></h1>
+          <h2 class="found-declaration-header"><a href="#">Villas at poco diablo</a></h2>
           <div class="found-item">
             <span>Апартаменты</span><br>
             <a href="#">Подробнее</a>
