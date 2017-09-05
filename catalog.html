@@ -1,168 +1,187 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-    			<img src="img/png-jpg-sedona/logo.png" width="138" height="70" alt="Логотип города Седона">
-    		</a>
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="photo-video.html">Фото и видео</a></li>
-        <li><a href="state-map.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="container">
-    <h1 class="visually-hidden">Подбор отелей</h1>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр выбора отелей</h2>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend class="filters-header">Инфраструктура:</legend>
-          <ul>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" checked>Бассейн</li>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking">Парковка</li>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="network">WI-FI</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="filters-header">Тип жилья:</legend>
-          <ul>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" checked>Гостиница</li>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" checked>Мотель</li>
-            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" checked>Апартаменты</li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="filters-header">Стоимость в сутки (Р):</legend>
-          <ul>
-            <li class="filter-range"><input type="text" name="min" value="от 0"></li>
-            <li class="filter-range"><input type="text" name="max" value="до 3000"></li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="filter-button button">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/png-jpg-sedona/logo.png" width="138" height="70" alt="Логотип города Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo-video.html">Фото и видео</a></li>
+          <li><a href="state-map.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Подбор отелей</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр выбора отелей</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend class="filters-header">Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool-checkbox" checked>
+                <label for="pool-checkbox">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking-checkbox">
+                <label for="parking-checkbox">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="network" id="network-checkbox">
+                <label for="network-checkbox">WI-FI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filters-header">Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel-checkbox" checked>
+                <label for="hotel-checkbox">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel-checkbox" checked>
+                <label for="motel-checkbox">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment-checkbox" checked>
+                <label for="apartment-checkbox">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filters-header">Стоимость в сутки (Р):</legend>
+            <ul>
+              <li class="filter-range">
+                <input type="text" name="min" placeholder="от 0" id="filter-min">
+              </li>
+              <li class="filter-range">
+                <input type="text" name="max" placeholder="до 3000" id="filter-max">
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">
           Показать
-        </button>
-      </form>
-    </section>
-    <section class="sorting">
-      <p>Найдено: 3</p>
-      <p>Cортировка</p>
-      <div>
-        <ul class="sorting-list">
-          <li><a class="active">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
+          </button>
+        </form>
+      </section>
+      <section class="sorting">
+        <p>Найдено: 3</p>
+        <p>Cортировка</p>
+        <div>
+          <ul class="sorting-list">
+            <li><a class="active">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#"><span>&uarr; вверх</span></a></li>
+            <li><a href="#"><span>&darr; вниз</span></a></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <article class="found">
+          <div class="found-image">
+            <img src="img/png-jpg-sedona/amara.jpg" width="135" height="90" alt="Фото гостиница Амара  ">
+          </div>
+          <div class="found-declaration">
+            <h2 class="found-declaration-header"><a href="#">Amara resort & spa</a></h2>
+            <div class="found-item">
+              <span>Гостиница</span><br>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="found-book">
+              <span>От 4000 р.</span><br>
+              <a href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="found-rate">
+            <div class="found-stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
+            <div class="found-valuation">
+              <span>Рейтинг: 8,5</span>
+            </div>
+          </div>
+        </article>
+        <article class="found">
+          <div class="found-image">
+            <img src="img/png-jpg-sedona/desert.jpg" width="135" height="90" alt="Фото мотель Десерт">
+          </div>
+          <div class="found-declaration">
+            <h2 class="found-declaration-header"><a href="#">Desert quail inn</a></h2>
+            <div class="found-item">
+              <span>Мотель</span><br>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="found-book">
+              <span>От 3000 р.</span><br>
+              <a href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="found-rate">
+            <div class="found-stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
+            <div class="found-valuation">
+              <span>Рейтинг: 8,9</span>
+            </div>
+          </div>
+        </article>
+        <article class="found">
+          <div class="found-image">
+            <img src="img/png-jpg-sedona/villas.jpg" width="135" height="90" alt="Фото апартаменты Виллас">
+          </div>
+          <div class="found-declaration">
+            <h2 class="found-declaration-header"><a href="#">Villas at poco diablo</a></h2>
+            <div class="found-item">
+              <span>Апартаменты</span><br>
+              <a href="#">Подробнее</a>
+            </div>
+            <div class="found-book">
+              <span>От 2000 р.</span><br>
+              <a href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="found-rate">
+            <div class="found-stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
+            <div class="found-valuation">
+              <span>Рейтинг: 9,2</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="footer">#VISITSEDONA</p>
+      <div class="footer-social">
+        <ul class="social-list">
+          <li><a class="social-button " href="# ">twitter</a></li>
+          <li><a class="social-button" href="#">facebook</a></li>
+          <li><a class="social-button " href="# ">youtube</a></li>
         </ul>
       </div>
-      <div>
-        <ul>
-          <li><a href="#"><span>&uarr;</span></a></li>
-          <li><a href="#"><span>&darr;</span></a></li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <article class="found">
-        <div class="found-image">
-          <img src="img/png-jpg-sedona/amara.jpg" width="135" height="90" alt="Фото жилья">
-        </div>
-        <div class="found-declaration">
-          <h2 class="found-declaration-header"><a href="#">Amara resort & spa</a></h2>
-          <div class="found-item">
-            <span>Гостиница</span><br>
-            <a href="#">Подробнее</a>
-          </div>
-          <div class="found-book">
-            <span>От 4000 р.</span><br>
-            <a href="#">Забронировать</a>
-          </div>
-        </div>
-        <div class="found-rate">
-          <div class="found-stars">
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-          </div>
-          <div class="found-valuation">
-            <span>Рейтинг: 8,5</span>
-          </div>
-        </div>
-      </article>
-      <article class="found">
-        <div class="found-image">
-          <img src="img/png-jpg-sedona/desert.jpg" width="135" height="90" alt="Фото жилья">
-        </div>
-        <div class="found-declaration">
-          <h2 class="found-declaration-header"><a href="#">Desert quail inn</a></h2>
-          <div class="found-item">
-            <span>Мотель</span><br>
-            <a href="#">Подробнее</a>
-          </div>
-          <div class="found-book">
-            <span>От 3000 р.</span><br>
-            <a href="#">Забронировать</a>
-          </div>
-        </div>
-        <div class="found-rate">
-          <div class="found-stars">
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-          </div>
-          <div class="found-valuation">
-            <span>Рейтинг: 8,9</span>
-          </div>
-        </div>
-      </article>
-      <article class="found">
-        <div class="found-image">
-          <img src="img/png-jpg-sedona/villas.jpg" width="135" height="90" alt="Фото жилья">
-        </div>
-        <div class="found-declaration">
-          <h2 class="found-declaration-header"><a href="#">Villas at poco diablo</a></h2>
-          <div class="found-item">
-            <span>Апартаменты</span><br>
-            <a href="#">Подробнее</a>
-          </div>
-          <div class="found-book">
-            <span>От 2000 р.</span><br>
-            <a href="#">Забронировать</a>
-          </div>
-        </div>
-        <div class="found-rate">
-          <div class="found-stars">
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-          </div>
-          <div class="found-valuation">
-            <span>Рейтинг: 9,2</span>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <p class="footer">#VISITSEDONA</p>
-    <div class="footer-social">
-      <ul class="social-list">
-        <li><a class="social-button " href="# ">twitter</a></li>
-        <li><a class="social-button" href="#">facebook</a></li>
-        <li><a class="social-button " href="# ">youtube</a></li>
-      </ul>
-    </div>
-    <p class="footer-copyright "><b>WEBSITE BY </b><a href="# ">HTML academy</a></p>
-  </footer>
-</body>
-
+      <p class="footer-copyright "><b>WEBSITE BY </b><a href="# ">HTML academy</a></p>
+    </footer>
+  </body>
 </html>
