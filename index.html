@@ -83,12 +83,35 @@
         <div class="interest-block">
           <h2>Заитересовались?</h2>
           <p>Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a href="catalog.html"> Поиск гостиницы в Седоне</a>
         </div>
       </section>
       <section class="map">
-        <div class="map-navigation">
-          <img src="img/png-jpg-sedona/map.jpg" width="1200" height="480" alt="Карта">
-        </div>
+        <form class="search-data " action="get ">
+          <p>
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text " id="arrival-date" name="arrival" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="departure-date">Дата выезда:</label>
+            <input type="text " id="departure-date" name="departure" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="number-of-adults">Взрослые:</label>
+            <button class="button button-minus ">меньше</button>
+            <input type="text " id="number-of-adults" name="adults " placeholder="2 ">
+            <button class="button button-plus ">больше</button>
+          </p>
+          <p>
+            <label for="number-of-children">Дети:</label>
+            <button class="button button-minus ">меньше</button>
+            <input type="text " id="number-of-children" name="children " placeholder="0 ">
+            <button class="button button-plus ">больше</button>
+          </p>
+          <p>
+            <button class="button button-search" type="submit">Найти</button>
+          </p>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
@@ -102,35 +125,5 @@
       </div>
       <p class="footer-copyright "><b>WEBSITE BY </b><a href="# ">HTML academy</a></p>
     </footer>
-    <section class="search">
-      <h2 class="search-header">
-      Поиск гостиницы в Седоне
-      </h2>
-      <form class="search-data " action="get ">
-        <p>
-          <label for="arrival-date">Дата заезда:</label>
-          <input type="text " id="arrival-date" name="arrival" placeholder="24 апреля 2017">
-        </p>
-        <p>
-          <label for="departure-date">Дата выезда:</label>
-          <input type="text " id="departure-date" name="departure" placeholder="4 июля 2017">
-        </p>
-        <p>
-          <label for="number-of-adults">Взрослые:</label>
-          <button class="button button-minus ">меньше</button>
-          <input type="text " id="number-of-adults" name="adults " placeholder="2 ">
-          <button class="button button-plus ">больше</button>
-        </p>
-        <p>
-          <label for="number-of-children">Дети:</label>
-          <button class="button button-minus ">меньше</button>
-          <input type="text " id="number-of-children" name="children " placeholder="0 ">
-          <button class="button button-plus ">больше</button>
-        </p>
-        <p>
-          <button class="button button-search" type="submit">Найти</button>
-        </p>
-      </form>
-    </section>
   </body>
 </html>

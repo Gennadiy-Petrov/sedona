@@ -53,3 +53,11 @@ h2 {
   color: #000000;
   font-weight: bold;
 }
+
+.map {
+  background-image: url(../img/png-jpg-sedona/map.jpg);
+  width: 1200px;
+  height: 593px;
+  background-repeat: no-repeat;
+}
+
