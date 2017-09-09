@@ -1,12 +1,324 @@
 body {
-  font-family: PT Sans;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: #333333;
-  font-style: regular;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-position: top center;
+
 }
 
-h1 {
+.inner-page {
+  background-color: #fefefe;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.knowing {
+  background-image: url(../img/png-jpg-sedona/background-full.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #ddecf4;
+}
+
+
+.intro {
+  background-color: #ffffff;
+  text-align: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.intro h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.intro p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.factor-place {
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.factor-place h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.factor-place p, span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.features  {
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.factor-features {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.factor-sight span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.interest-block {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.interest-block h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.interest-block p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.interest a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.map {
+  background-image: url(../img/png-jpg-sedona/map.jpg);
+  background-position: 50% 50%;
+  width: 1200px;
+  height: 593px;
+  text-align: center;
+}
+
+.search {
+  background-color: #ffffff;
+}
+.search-data {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.search-data input {
+  font: inherit;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.button-search {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-button {
+  background-color: #81b3d2;
+}
+
+.footer {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-copyright a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-copyright b {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.filters {
+  background-image: url(../img/png-jpg-sedona/filter.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #7d9dbe;
+  text-align: left;
+}
+
+.filters li {
+  list-style: none;
+}
+
+.filters-header {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter-option,
+.filter-button {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.filter-button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
+.sorting p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.sorting li {
+  list-style: none;
+}
+
+.sorting p+p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sorting-list a {
+  color: #cacaca;
+}
+
+.sorting-arrow span {
+  color: #cacaca;
+}
+
+.found {
+  border: 2px solid #f6f6f6;
+}
+
+.found-declaration-header a {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.found-book span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.found-book a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.found-item a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.found-item span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+
+
+/*.button {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+*/
+/*h1 {
   font-family: PT Sans;
   font-size: 30px;
   line-height: 36px;
@@ -60,4 +372,4 @@ h2 {
   height: 593px;
   background-repeat: no-repeat;
 }
-
+*/
