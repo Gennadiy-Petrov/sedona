@@ -118,6 +118,16 @@ a {
   text-align: center;
 }
 
+.interest-block a:hover,
+.interest-block a:focus {
+  background-color: #604e43;
+}
+
+.interest-block a:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #503e33;
+}
+
 .interest-block h2 {
   font-size: 30px;
   line-height: 36px;
@@ -165,6 +175,31 @@ a {
   border: none;
 }
 
+.search-data input:hover {
+  background-color: #ebebeb;
+}
+
+.search-data input:focus {
+  background-color: transparent;
+  border: 1px solid #f2f2f2;
+  outline: none;
+}
+
+.search-data button {
+  color: rgba(0,0,0,0.3);
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-data button:hover,
+.search-data button:focus {
+  color: #000000;
+}
+
+.search-data button:active {
+  color: #81b3d2;
+}
+
 .button-search {
   font-size: 21px;
   line-height: 26px;
@@ -172,6 +207,16 @@ a {
   color: #ffffff;
   background-color: #81b3d2;
   text-transform: uppercase;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #5496bd;
 }
 
 .main-footer {
@@ -187,6 +232,15 @@ a {
   background-color: #81b3d2;
 }
 
+.social-list a:hover,
+.social-list a:focus {
+  background-color: #669ec0;
+}
+.social-list a:active {
+  color: rgba(0,0,0,0.3);
+  background-color: #5496bd;
+}
+
 .footer {
   font-size: 21px;
   line-height: 26px;
@@ -199,6 +253,16 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  text-transform: lowercase;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  color: #669ec0;
+}
+
+.footer-copyright a:active {
+  color: rgba(0,0,0,0.3);
 }
 
 .footer-copyright b {
@@ -214,6 +278,10 @@ a {
   background-position: 50% 50%;
   background-color: #7d9dbe;
   text-align: left;
+}
+
+.filters fieldset {
+  border: none;
 }
 
 .filters li {
@@ -241,6 +309,26 @@ a {
   border: 2px solid #ffffff;
 }
 
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link a:hover,
+.navigation-link a:focus {
+  color: #81b3d2;
+}
+
+.navigation-link a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.current a{
+  color: #766357;
+}
+
 .sorting p {
   font-size: 21px;
   line-height: 26px;
@@ -260,12 +348,42 @@ a {
 }
 
 .sorting-list a {
-  color: #cacaca;
+  color: rgba(0,0,0,0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus,
+ {
+  color: #81b3d2;
+}
+
+.sorting-current {
+  color: #81b3d2;
 }
 
 .sorting-arrow span {
-  color: #cacaca;
+  color: rgba(0,0,0,0.3);
 }
+
+.arrow span:hover,
+.arrow span:focus {
+  color: #231f20;
+}
+
+.arrow-active span {
+  color: #81b3d2;
+}
+
+.arrow span:active {
+  color: #81b3d2;
+}
+
 
 .found {
   border: 2px solid #f6f6f6;
@@ -276,6 +394,15 @@ a {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+.found-declaration-header a:hover,
+.found-declaration-header a:focus {
+  color: #81b3d2;
+}
+
+.found-declaration-header a:active {
+  color: rgba(0,0,0,0.3);
 }
 
 .found-book span {
@@ -293,12 +420,32 @@ a {
   background-color: #766357;
 }
 
+.found-book a:hover,
+.found-book a:focus {
+  background-color: #604e43;
+}
+
+.found-book a:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #503e33;
+}
+
 .found-item a {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.found-item a:hover,
+.found-item a:focus {
+  background-color: #669ec0;
+}
+
+.found-item a:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #5496bd;
 }
 
 .found-item span {
@@ -308,68 +455,7 @@ a {
   color: #333333;
 }
 
-
-
-
-/*.button {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
+.found-valuation span {
+  color: #666666;
+  background-color: #f2f2f2;
 }
-*/
-/*h1 {
-  font-family: PT Sans;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: PT Sans;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.site-navigation a {
-  font-family: PT Sans;
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.interest-block h2 {
-  font-family: PT Sans;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.search-header {
-  font-family: PT Sans;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.found h2 a {
-  font-family: PT Sans;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
-}
-
-.map {
-  background-image: url(../img/png-jpg-sedona/map.jpg);
-  width: 1200px;
-  height: 593px;
-  background-repeat: no-repeat;
-}
-*/
