@@ -477,7 +477,7 @@ body {
 
 .main-header {
 
-  min-height: 70px;
+  min-height: 56px;
   background-color: rgba(255,0,0,0.1);
   outline: 1px solid yellow;
 }
@@ -520,12 +520,76 @@ outline: 1px solid blue;
 .container {
   width: 1200px;
   margin: 0 auto;
-  outline: 1px solid lime;
+  /*outline: 1px solid lime*/;
 }
 
 .knowing {
-  min-height: 724px;
+  min-height: 508px;
   background-color: rgba(127,255,212,0.2);
-  outline: 1px solid maroon;
+  outline: 1px solid blue;
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  min-height: 216px;
+  background-color: rgba(255,255,0,0.3);
+  outline: 1px solid red;
+}
+
+.intro_text {
+  margin-top: 62px;
+  min-height: 50px;
+  background-color: rgba(225,78,233,0.6);
+  outline: 1px solid blue;
+}
+
+.intro_text:last-child {
+  min-height: 16px;
+  margin-top: 33px;
+  outline: 1px solid purple;
+  background-color: rgba(0,0,255,0.2);
+}
+
+.factor {
+  display: flex;
+  min-height: 256px;
+  outline: 1px dotted black;
+  background-color: rgba(255,0,255,0.2);
+}
+
+.factor-place {
+  min-height: 256px;
+  width: 400px;
+  outline: 1px solid green;
+  background-color: rgba(80,134,255,0.3);
+}
+
+.factor-view {
+  min-height: 256px;
+  width: 800px;
+  background-color: rgba(255,0,0,0.3);
+  outline: 1px solid yellow;
+}
+
+
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 330px;
+  background-color: rgba(106,90,205,0.3);
+  outline: 1px solid orangered;
+}
+
+.features-advice {
+  height: 270px;
+  width: 320px;
+  background-color: rgba(0,255,127,0.4);
+  outline: 1px solid fuchsia;
+}
